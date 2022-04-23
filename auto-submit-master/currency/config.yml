@@ -1,0 +1,56 @@
+user:
+  #username 学号或者工号
+  username: ''
+  #tellphone 电话号码
+  tellphone: ''
+  #address 地址，定位信息
+  address: 中国山东省临沂市岱岳区一粥店街道-525号-泰山学院
+  #email 接受通知消息的邮箱
+  email: @qq.com
+  #lon 当前位置经度，可以访问http://zuobiao.ay800.com/s/27/index.php获取
+  lon: '117.037020921'
+  #lat 当前位置纬度
+  lat: '36.2248291423'
+  #school 学校全称
+  school: 泰山学院
+#今日校园相关配置
+cpdaily:
+  #表单组默认选项配置
+  defaults:
+    #表单默认选项配置，按顺序，注意，只有标必填项的才处理，不会配置就执行generate.py
+    - default:
+        title: 今天你的所在地是？
+        type: 1
+        value: 山东省/泰安市/岱岳区
+    - default:
+        title: 今天你的早、中、晚体温是多少？
+        type: 2
+        value: 37.2℃及以下
+    - default:
+        title: 今天你的身体状况是？
+        type: 2
+        value: 健康
+    - default:
+        title: 近14天你或你的共同居住人是否有疫情中、高风险区域人员接触史？
+        type: 2
+        value: 否
+    - default:
+        title:  近14天你或你的共同居住人是否和确诊、疑似病人接触过？
+        type: 2
+        value: 否
+    - default:
+        title:  近14天你或你的共同居住人是否是确诊、疑似病例？
+        type: 2
+        value: 否
+    - default:
+        title: 你或你的共同居住人目前是否被医学隔离？
+        type: 2
+        value: 否
+    - default:
+        title: 今天你当地的健康码颜色是？
+        type: 2
+        value: 绿色
+    - default:
+        title: 本人承诺以上所填报的全部内容均属实、准确，不存在任何隐瞒与不实的情况，更无遗漏之处。
+        type: 2
+        value: 是
